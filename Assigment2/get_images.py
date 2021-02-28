@@ -20,8 +20,7 @@ def download(url, name):
     download function for downloading
     images from urls and give names
     """
-    global response
-    print(name)
+
     try:
         response = requests.get(url)
     except requests.exceptions.ConnectionError:
